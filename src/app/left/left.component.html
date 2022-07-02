@@ -1,0 +1,63 @@
+
+<p>left works!</p>
+<!-- <img [src]="imagesrc" alt="Rose" style="width:50px;height:50px; justify-self: center;" > -->
+<h3>{{username}}</h3>
+
+<button class="btn btn-primary" [disabled]="btnEnabled" (click)="changeName()">Toggle</button><br><br>
+
+<input type="text" [(ngModel)]="username">
+
+<!-- <div>
+    <div *ngIf="users">
+      <h3>Users Exists</h3>
+
+    </div>
+</div> -->
+
+<!-- <div>
+    <div *ngIf="age == 25; else ageNotEqualTo25">
+      <h3>Users Exist with age {{age}}</h3>
+    </div>
+    <ng-template #ageNotEqualTo25>
+        <h3>Users age not equal to {{age}}</h3>
+    </ng-template>
+</div> -->
+
+<!-- <div>
+    <div *ngIf="age == 25; then ageEqualTo25 else ageNotEqualTo25">
+      <h3>Users Exist with age {{age}}</h3>
+    </div>
+
+    <ng-template #ageEqualTo25>
+        <h3>Users age equal to {{age}}</h3>
+    </ng-template>
+    <ng-template #ageNotEqualTo25>
+        <h3>Users age not equal to {{age}}</h3>
+    </ng-template>
+</div> -->
+
+<!-- <div>
+<li *ngFor="let user of users; index as i;">
+    {{i}} - {{user.name}}
+</li>
+</div> -->
+
+<!-- <div>
+    <div *ngFor="let user of users; index as i; even as e">
+        <li *ngIf="user.status=='Active'">    
+        {{e}} - index - {{i}} - {{user.name}}
+    </li>
+ </div> -->
+ <!-- <div>
+    <div *ngFor="let user of users; index as i; first as f">
+        <div *ngIf="f">    
+        {{i}} - {{user.name}}
+        </div>
+ </div> -->
+
+ <!-- <div>
+    <div *ngFor="let user of users; index as i; last as l">
+        <li *ngIf="l">    
+        {{i}} - {{user.name}}
+        </li>
+ </div> -->
