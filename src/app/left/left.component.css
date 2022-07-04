@@ -1,0 +1,9 @@
+.activeuser{
+    color: blueviolet;
+    font-style: italic;
+}
+
+.inactiveuser{
+    color: rgb(226, 43, 52);
+    font-style: italic;
+}

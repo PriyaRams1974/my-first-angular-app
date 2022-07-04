@@ -8,6 +8,7 @@ import { LeftComponent } from './left/left.component';
 import { MiddleComponent } from './middle/middle.component';
 import { RightComponent } from './right/right.component';
 import { FormsModule } from '@angular/forms';
+import { MyServiceService } from './my-service.service';
 @NgModule({
   declarations: [
     AppComponent,
@@ -21,7 +22,7 @@ import { FormsModule } from '@angular/forms';
     BrowserModule,
     FormsModule
   ],
-  providers: [],
+  providers: [MyServiceService],
   bootstrap: [AppComponent]
 })
 export class AppModule { }

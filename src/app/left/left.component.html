@@ -61,3 +61,39 @@
         {{i}} - {{user.name}}
         </li>
  </div> -->
+
+ <!-- <div *ngFor="let user of users">  
+     <div [ngSwitch]="user.status">
+         <li *ngSwitchCase="'Active'">
+             {{user.name}} - {{user.status}}
+         </li>
+         <li *ngSwitchCase="'InActive'">
+            {{user.name}} - {{user.status}}
+        </li>
+        <li *ngSwitchDefault>
+            {{user.name}}
+        </li>
+
+     </div>
+</div> -->
+
+<!-- <div *ngFor="let user of users">  
+    <div [ngSwitch]="user.status" [ngStyle]="{'color':'blue'}">
+        <li *ngSwitchCase="'Active'" [ngStyle]="{'color':'green'}">
+            {{user.name}} is Active
+        </li>
+        <li *ngSwitchCase="'InActive'" [ngStyle]="{'color':'red'}">
+           {{user.name}} is inActive
+       </li>
+       <li *ngSwitchDefault>
+           {{user.name}}
+       </li>
+
+    </div>
+</div> -->
+
+<div *ngFor="let user of users">  
+    <div [ngClass]="{'activeuser' : user.status == 'Active', 'inactiveuser' : user.status == 'InActive'}">
+        {{user.name}}
+    </div>
+</div>

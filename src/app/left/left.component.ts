@@ -32,7 +32,6 @@ export class LeftComponent implements OnInit {
       name:'Amit',
       email:'amit@gmail.com',
       phonenumber:'1231757890' , 
-      status: 'Active'
     }
   ]
 
