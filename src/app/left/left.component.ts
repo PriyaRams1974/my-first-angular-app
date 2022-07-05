@@ -1,4 +1,5 @@
 import { Component, OnInit } from '@angular/core';
+import { ProductsService } from '../services/products.service';
 
 @Component({
   selector: 'app-left',
@@ -39,7 +40,7 @@ export class LeftComponent implements OnInit {
 
   age : number = 25;
 
-  constructor() { }
+  constructor(public prod: ProductsService) { }
 
   ngOnInit(): void {
     setTimeout(()=>{
@@ -49,6 +50,10 @@ export class LeftComponent implements OnInit {
   }
   changeName(){
     this.username = "Priyanka"
+  }
+
+  addQty(){
+    this.prod.product_qty++;
   }
 
 }

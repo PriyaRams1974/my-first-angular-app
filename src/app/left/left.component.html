@@ -7,6 +7,12 @@
 
 <input type="text" [(ngModel)]="username">
 
+<h1>{{prod.product_name}}</h1>
+
+<h1>{{prod.product_qty}}</h1>
+
+<button class="btn btn-primary" (click)="addQty()">Add Qty</button><br><br>
+
 <!-- <div>
     <div *ngIf="users">
       <h3>Users Exists</h3>
